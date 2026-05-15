@@ -1,0 +1,418 @@
+@charset "utf-8";
+/*====CSS Document====*/
+body {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 0;
+	background: #ffffff;
+	color: #000000;
+	text-align: center;
+    font-family: 'Noto Sans';
+	font-weight: normal;
+	}
+div, ul, h1, h2, h3, h4, h5, li, p, img, form, input, textarea {margin: 0;padding: 0;}
+header, section, footer, aside, nav, main, article, figure {display: block;}
+table, tr, td {border: 0;}
+a {outline: none;color: inherit;text-decoration: none;}
+img {border: none; max-width: 100%; height: auto;}
+li {list-style: none;}
+* {box-sizing: border-box;}
+.img-full {max-width: 100%;}
+.clearall {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+	}
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*-----------------------
+FONTS
+------------------------*/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-Regular.woff2') format('woff2'),
+	url('../fonts/NotoSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../fonts/NotoSans-SemiBold.woff2') format('woff2'),
+	url('../fonts/NotoSans-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	}
+	
+@font-face {
+    font-family: 'Noto Sans';
+	src: url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+	url('../fonts/NotoSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	}
+@font-face {
+    font-family: 'HelveticaInseratCyr Upright';
+    src: url('../fonts/HelveticaInseratCyr-Upright.woff2') format('woff2'),
+	url('../fonts/HelveticaInseratCyr-Upright.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-SemiBold.woff2') format('woff2'),
+	url('../fonts/Outfit-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	}
+	
+@font-face {
+    font-family: 'Outfit';
+	src: url('../fonts/Outfit-Bold.woff2') format('woff2'),
+	url('../fonts/Outfit-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('../fonts/Outfit-ExtraBold.woff2') format('woff2'),
+	url('../fonts/Outfit-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+	}
+
+/*-----------------------
+MAIN CSS START
+------------------------*/
+
+.container {
+	width:1030px;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	}
+	
+/*======Header======*/
+.header{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+	padding:13px 0;
+	z-index:1;
+	position:relative;
+	}
+.logo{
+	float:left;
+    width:115px;
+	}
+.header_button{
+	float:right;
+	width:200px;
+	height:52px;
+    color:#0a0c55;
+	font-size:26px;
+	line-height:54px;
+	font-family: 'HelveticaInseratCyr Upright';
+	text-align:center;
+	letter-spacing:0.5px;
+	background: #FFFA49;
+	background: linear-gradient(180deg, rgba(255, 250, 73, 1) 0%, rgba(254, 250, 96, 1) 50%, rgba(253, 210, 7, 1) 100%);
+	text-transform:uppercase;
+	-webkit-box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.2);
+	border-radius:5px;
+	margin-top:2px;
+	}	
+	
+/*========Banner========*/
+.banner{
+	float:left;
+	width:100%;
+	background:url(../images/bnr-bg.webp)no-repeat center top;
+	padding:45px 0 108px;
+	position:relative;
+	}
+.banner_heading{
+	color:#234a86;  
+    font-size:60px;
+	line-height:70px;
+    font-weight:800;
+	font-family: 'Outfit';
+	}	
+.banner_left{
+	float:left;
+	width:56%;
+	text-align:left;
+	margin-top:33px;
+	}
+.banner_image{
+	position:absolute;
+	top:184px;
+    right:0;
+	}
+	
+/*======COMMON-CSS======*/
+.common_paragraph{
+	color:#000000;
+	font-size:20px;
+	line-height:28px;
+	margin-top:25px;
+	}
+.common_paragraph.margin-top-0{margin-top:0;}
+	
+/*======================*/
+/*=====Section-1===-===*/
+.section1{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	padding:0 0 55px;
+	position:relative;
+	}	
+ul.benefit_list{
+	display: -webkit-flex;
+    display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	width:100%;
+	margin:-60px auto 0;
+	}	
+ul.benefit_list li{
+	display: -webkit-flex;
+    display: flex;
+    justify-content:flex-start;
+	align-items:center;
+	column-gap:10px;
+	width:32%;
+	text-align:left;
+	background:#ffffff;
+	border-radius:15px;
+	padding:15px 20px;
+	}
+ul.benefit_list p{
+	color:#000000;
+	font-size:18px;
+	line-height:26px;
+	font-weight:600;
+	}
+.benefit_list_icon_box{
+	width:58px;
+    flex-shrink:0;
+	}
+.benefit_list_icon{
+	width:58px;
+	}
+.section1_content_box{
+	display:inline-block;
+	vertical-align:middle;
+	max-width:830px;
+	width:100%;
+	margin-top:35px;
+	}				
+.section1_content_box_heading{
+	color:#000000;
+	font-size:24px;
+	line-height:34px;
+	font-weight:600;
+	}	
+.product_box{
+	display:inline-block;
+	vertical-align:middle;
+	width:100%;
+	border:3px solid #234a86;
+	border-radius:16px;
+	padding:40px 72px 50px;
+	margin-top:40px;
+	}
+.product_box_heading{
+	color:#395d95;  
+    font-size:36px;
+	line-height:46px;
+    font-weight:bold;
+	font-family: 'Outfit';
+	}
+.product_image{
+	display:block;
+	margin:30px auto 0;	
+	}
+.Price_box{
+	display:inline-block;
+	vertical-align:middle;
+	padding:0 120px;
+	margin-top:20px;
+	position:relative;
+	}
+.left_arrow{
+	position:absolute;
+	top:15px;
+	left:0;	
+	}
+.price_box_heading{
+	color:#000000;  
+    font-size:24px;
+	line-height:32px;
+    font-weight:600;
+	font-family: 'Outfit';
+	}
+.price{
+	color:#395d95;  
+    font-size:72px;
+	line-height:70px;
+    font-weight:600;
+	font-family: 'Outfit';
+	margin-top:10px;
+	}
+.right_arrow{
+	position:absolute;
+	top:15px;
+	right:0;	
+	}
+.product_box_button{
+	display:inline-block;
+    vertical-align:middle;
+	max-width:560px;
+    width:100%;
+    color:#111370;
+    font-size:44px;
+    line-height:44px;
+    text-align:center;
+	font-family: 'HelveticaInseratCyr Upright';
+    letter-spacing:0.5px;
+	border:2px solid #e2b705;
+	background: #FFFA49;
+	background: linear-gradient(180deg, rgba(255, 250, 73, 1) 0%, rgba(254, 250, 96, 1) 50%, rgba(253, 210, 7, 1) 100%);
+	text-transform:uppercase;
+	-webkit-box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.2);
+	box-shadow:0 6px 6px 0 rgba(0, 0, 0, 0.2);
+	border-radius:8px;
+	padding:25px 0;
+	margin:30px auto 0;	
+	}	
+	
+/*======Footer=======*/
+.footer{
+	float:left;
+	width:100%;
+	background:#fafafa;
+	padding:45px 0 50px;
+	}
+.footer_text{
+	color:#333333;
+	font-size:16px;
+    line-height:26px;
+    letter-spacing:0.3px;
+	margin-top:10px;
+	}	
+.footer_text.margin-top-0{margin-top:0;}
+.footer_text a{padding:0 5px;}		
+.footer_statement_box{
+	display:inline-block;
+	vertical-align:middle;
+	max-width:970px;
+	width:100%;
+	margin-top:30px;
+	}
+.footer_statement_text{
+	color:#333333;
+	font-size:12px;
+    line-height:20px;
+    letter-spacing:0.3px;
+	margin-top:25px;
+	}
+.footer_statement_text.margin-top-0{margin-top:0;}		
+	
+/*-----------------------
+MEDIA-QUERY
+------------------------*/
+.show-mob, .show-tab{display:none;}
+
+@media only screen and (max-width: 1200px){
+.container{width:1004px;}
+
+}
+
+@media only screen and (max-width:1021px){	
+.container{width:750px;}
+.show-tab{display:block;}
+.show-desk{display:none;}
+
+.common_paragraph{font-size:18px; line-height:26px; margin-top:20px;}
+
+.header{padding:11px 0;}
+.logo{width:86px}
+.header_text{top:-5px;}
+.header_button{width:170px; height:42px; font-size:22px; line-height:46px; margin-top:0;}
+
+.banner{padding:40px 0 95px;}
+.banner_heading{font-size:45px; line-height:53px;}
+.banner_image{top:205px; width:340px;}
+
+.section1{padding:0 0 40px;}
+ul.benefit_list li{width:32.5%; padding:15px 14px 15px 15px;}
+.benefit_list_icon_box{width:50px;}
+ul.benefit_list p{line-height:26px;}
+.section1_content_box{margin-top:30px;}
+.product_box{padding:35px 35px 45px; margin-top:30px;}
+.product_box_button{max-width:520px; font-size:40px; line-height:40px; padding:24px 0 16px; margin:25px auto 0;}
+
+.footer{padding:40px 0;}
+.footer_statement_box{margin-top:25px;}
+.footer_statement_text{margin-top:20px;}
+
+}
+
+@media only screen and (max-width:767px){
+.container{max-width:600px; width:100%; padding:0px 15px; box-sizing:border-box;}
+.show-mob{display:block;}
+.hide-mob{display:none;}
+
+.common_paragraph{font-size:17px; line-height:25px;}
+
+.header{padding:10px 0;}
+.logo{float:none; display:inline-block; vertical-align:middle;}
+
+.banner{background: url(../images/bnr-bg-m.webp) no-repeat center top #f4f9ff;background-size:cover; padding:25px 0 85px;}
+.banner_heading{font-size:34px; line-height:38px;}
+.mobile_banner_image{display:block; margin:22px auto 0;}
+.banner_left{width:100%; margin-top:20px;}
+
+.section1{padding:0 0 30px;}
+ul.benefit_list{row-gap:15px;}
+ul.benefit_list li{width:100%; padding:15px 38px 15px 20px; -webkit-box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.1); box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.1);}
+.benefit_list_icon_box{width:55px;}
+ul.benefit_list li p{font-size:17px; line-height:25px;}
+
+.section1_content_box{margin-top:30px;}
+.section1_content_box_heading{font-size:20px; line-height:28px;}
+.product_box{padding:25px 15px 30px; margin-top:25px;}
+.product_box_heading{font-size:24px; line-height:30px;}
+.product_image{margin:20px auto 0;}
+.Price_box{padding:0 65px; margin-top:15px;}
+.left_arrow, .right_arrow{width:70px;}
+.price_box_heading{font-size:22px; line-height:30px;}
+.price{font-size:55px; line-height:55px;}
+.product_box_button{font-size:25px; line-height:25px; padding:20px 0 18px; margin:15px auto 0;}
+
+.footer{padding:25px 0;}
+.footer_text{font-size:13px; line-height:23px;}
+.footer_text a{padding:0 3px;}
+.footer_statement_box{margin-top:20px;}
+.footer_statement_text{margin-top:15px;}
+
+}
